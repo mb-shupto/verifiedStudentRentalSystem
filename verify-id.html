@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify Student ID</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header"><h1>Campus Nest</h1></header>
+
+<main>
+    <div class="hero">
+        <h2>Verify Your Student ID</h2>
+        <p>Your .edu email has been received! Please upload a clear image of your student ID to complete verification.</p>
+        <form id="idUploadForm">
+            <div>
+                <label for="studentIdImage">Upload Student ID</label>
+                <input type="file" id="studentIdImage" name="studentIdImage" accept="image/*" required>
+            </div>
+            <button type="submit" class="button button2">Submit for verification</button>
+        </form>
+        <div id="successMessage" style="display:none; margin-top: 1rem;;">
+            <p>Image uploaded! Verification is in progress. We'll notify you shortly! <a href="login.html">Return to Login</a></p>
+        </div>
+    </div>
+</main>
+</body>
+</html>
