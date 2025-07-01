@@ -3,55 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <style>
-        h2{
-            text-align: center;
-        }
-
-        form{
-            text-align: center;
-        }
-        footer{
-            text-align: center;
-        }
-        form {
-    max-width: 400px;
-    margin: 2rem auto;
-    padding: 2rem;
-    background: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-input[type="text"],
-input[type="password"] {
-    width: 100%;
-    padding: 0.5rem;
-    margin: 0.5rem 0;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-    </style>
+    <title>Login - Campus Nest</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <div class="login-container">
+        <header class="form-header">
         <h2>Login</h2>
     </header>
-    <main>
-        <form action="">
-            <label for="email">Email: </label><br>
-            <input type="text" id="email" name="email">
-            <br>
-            <label for="password">Password: </label><br>
-            <input type="password" id="password" name="password" >
-            <br>
-            <input type="submit" value="Submit">
-        </main>
-        <footer>
-            <p>Don't have an account? <a href="register.html">Sign Up</a> </p>
-            <a href="index.html" id="back">Back</a>
-        </footer>
-    </body>
+    
+    <form action="">
+        <div class="form-group">
+        <label for="email">Email: </label><br>
+        <input type="text" id="email" name="email">
+        </div>
+        <div class="form-group">
+        <label for="password">Password: </label><br>
+        <input type="password" id="password" name="password" >
+        </div>
+        
+        <button type="submit" class="submit-btn">Submit</button>
+    </form>
+
+    <footer class="form-footer">
+        <p>Don't have an account? <a href="register.html">Sign Up</a> </p>
+        <a href="index.html" id="back">Back</a>
+    </footer>
+    </div>
 </body>
 </html>
