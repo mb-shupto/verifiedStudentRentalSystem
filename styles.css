@@ -135,14 +135,14 @@ body {
 
 /* Form Elements */
 .form-group {
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.5rem;
 }
 
 .form-group label {
     display: block;
     margin-bottom: 0.5rem;
-    font-weight: 500;
-    color: #2c3e50;
+    font-weight: bold;
+    color: #333;
 }
 
 .form-group input {
@@ -303,4 +303,46 @@ body {
 .action-card h4 {
     color: #007bff;
     margin-bottom: 0.5rem;
+}
+
+.edit-profile-card {
+    max-width: 600px;
+    margin: 70px auto 2rem;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+
+
+.button3 {
+    background-color: #dc3545; /* Red color for Cancel */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button3:hover {
+    background-color: #a31a28; /* Darker red on hover */
+}
+
+.button3:active {
+    background-color: #bd2130; /* Even darker when clicked */
+}
+
+/* Ensure form-actions layout works with new button */
+.form-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+}
+
+.form-actions .button {
+    padding: 0.8rem 1.5rem;
 }
