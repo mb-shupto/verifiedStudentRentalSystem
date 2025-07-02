@@ -1,4 +1,4 @@
-Verified Student Rental System
+**Verified Student Rental System**
 
 Overview
 The Verified Student Rental System is a web application designed to create a trusted, student-only rental platform. It addresses the challenges of unsafe, unaffordable, and scam-ridden off-campus housing by offering verified listings, scam-proof contracts, smart roommate matching, fair rent policies, and AI-powered verification. Built as part of a "Web Application & Interface" course, this project aims to provide a safe and dependable housing solution for students.
