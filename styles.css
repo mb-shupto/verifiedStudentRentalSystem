@@ -64,6 +64,7 @@
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     text-align: center;
+    margin-top: 70px;
 }
 
 /* Features List */
@@ -205,15 +206,16 @@ body {
 }
 
 .navbar{
+    border: 1rem solid gray;
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
     align-items: center;
     background-color: #8a97a6;
     padding: 1rem;
 }
 
 .nav-links {
-    list-style: none;
+    list-style:disc;
     display: flex;
     gap: 2rem;
     margin: 0;
