@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile - Campus Nest</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><img src="./images/campusNest logo horizontal.png" alt="Campus Nest Logo" height="200" width="200" class="center-image">
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="listings">Listings</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+    </nav>  
+
+    <div class="hero">
+        <h2>Edit Your Profile</h2>
+        <div class="edit-profile-card">
+            <form id="editProfileForm">
+                <div class="form-group">
+                    <label for="fullname">Full Name: </label>
+                    <input type="text" id="fullName" name="fullName" value="John wick" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email" value="john.wick@edu.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="university">University: </label>
+                    <input type="text" id="university" name="university" value="Example University" required>
+                </div>
+                <div class="form-group">
+                    <label for="password" >Enter Password: </label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password">
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="button button2"> Save Changes</button>
+                    <a href="profile.html" class="button button3">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
