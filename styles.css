@@ -47,6 +47,7 @@
   background-color: white; 
   color: black; 
   border: 2px solid #008CBA;
+  border-radius: 10px;
 }
 
 .button2:hover {
@@ -57,7 +58,7 @@
 
 /* Hero Section */
 .hero {
-    max-width: 800px;
+    max-width: 50%;
     margin: 2rem auto;
     padding: 2rem;
     background: #f9f9f9;
@@ -229,7 +230,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: #f0f0f0; /* Lighten on hover */
+    color: #000000; /* Lighten on hover */
 }
 
 .auth-buttons {
@@ -345,4 +346,10 @@ body {
 
 .form-actions .button {
     padding: 0.8rem 1.5rem;
+}
+
+.logo{
+    /* border: 1rem solid red; */
+    width: 30%;
+    height: 20%;
 }
