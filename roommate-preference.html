@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Roommate Preference - Campus Nest</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./images/campusNest logo horizontal.png" alt="Campus Nest Logo" class="center-image" height="200" width="200">
+        </div>
+        <ul class="nav-links">
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="">Listings</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <h2>Set Your Roommate Preferences</h2>
+        <div class="edit-profile-card">
+            <form id="form-group">
+                <label for="sleepPref"><strong>Preferred Sleep Habit:</strong></label>
+                <div>
+                    <input type="radio" name="sleepPref" id="earlyBird" value="any" required>
+                    <label for="earlyBird">Early Bird</label>
+                </div>
+                <div>
+                    <input type="radio" name="sleepPref" id="nightOwl" value="any" required>
+                    <label for="nightOwl">Night Owl</label>
+                </div>
+                <div>
+                    <input type="radio" name="sleepPref" id="noPref" value="any" required>
+                    <label for="noPref">No Preferences</label>
+                </div>
+                <br>
+                <label for="smokePref"><strong>Smoking Preference:</strong></label>
+                <div>
+                    <input type="radio" name="smokePref" id="nonSmoker" value="any" required>
+                    <label for="nonSmoker">Non-Smoker</label>
+                </div>
+                <div>
+                    <input type="radio" name="smokePref" id="smoker" value="any" required>
+                    <label for="smoker">Smoker</label>
+                </div>
+                <div>
+                    <input type="radio" name="smokePref" id="noPref" value="any" required>
+                    <label for="noPref">No Preferences</label>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="studyHabits">Study Habits:</label>
+                    <select name="studyHabits" id="studyHabits" required>
+                        <option value="">Select an Option</option>
+                        <option value="quiet">Quiet</option>
+                        <option value="social">Social</option>
+                        <option value="flexible">Flexible</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="notes">Additional Notes (Optional): </label>
+                    <textarea name="notes" id="notes" rows="4" placeholder="e.g., preferences for others"></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="button button2">Save Preferences</button>
+                        <a href="profile.html" class="button button3">Cancel</a>
+                    </div>              
+            </form>
+        </div>
+    </div>
+
+
+    <div id="successMessage" style="display:none; margin-top: 1rem; text-align: center;">
+        <p>Preferences saved successfully! <a href="profile.html">Return to Profile</a></p>
+    </div>
+
+    <script>
+        document.getElementById('roommatePreferencesForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            document.getElementById('successMessage').style.display = 'block';
+            document.getElementById('roommatePreferencesForm').style.display = 'none';
+        });
+    </script>
+    
+</body>
+</html>
