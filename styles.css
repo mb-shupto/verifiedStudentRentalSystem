@@ -137,7 +137,46 @@ body {
 /* Form Elements */
 .form-group {
     margin-bottom: 1.5rem;
+
+    input {
+    font-size: 16px;
+    padding: 10px 10px 10px 10px;
+    display: block;
+    width: 200px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #515151;  
+    background: transparent;
 }
+}
+
+input {
+    font-size: 16px;
+    padding: 10px 10px 10px 10px;
+    display: block;
+    width: 200px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #515151;  
+    background: transparent;
+}
+
+input:focus~label {
+    top: -20px;
+    font-size: 14px;
+    color: #7700ff;
+}
+
+input:focus {
+    border-width: 2px;
+    border-bottom-color: #7700ff;
+
+
+
+
+}
+  
+
 
 .form-group label {
     display: block;
@@ -316,7 +355,6 @@ body {
 }
 
 
-
 .button3 {
     background-color: #dc3545; /* Red color for Cancel */
     color: white;
@@ -370,4 +408,51 @@ body {
 }
 .form-group textarea {
     resize: vertical;
+}
+
+/* Add to existing styles */
+.listing-card {
+    display: block;
+    text-decoration: none;
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.card-image {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+}
+
+.listing-card h3 {
+    margin: 0.25rem 0;
+    color: #007bff;
+    font-size: 1rem;
+}
+
+.listing-card p {
+    margin: 0;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.listings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.detail-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 8px;
 }
