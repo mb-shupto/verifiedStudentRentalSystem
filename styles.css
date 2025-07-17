@@ -420,7 +420,7 @@ input:focus {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 200px;
-    height: 200px;
+    height: 230px;
     overflow: hidden;
 }
 
@@ -455,4 +455,37 @@ input:focus {
     height: auto;
     margin-bottom: 1rem;
     border-radius: 8px;
+}
+
+.prev-nav {
+    display: block;
+    text-decoration:dashed;
+    background: #7f8fd1;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px skyblue;
+    text-align:center;
+    width: 150px;
+    height: 50px;
+    font-size: 0.9rem;
+}
+
+.next-nav {
+    display: block;
+    text-decoration:dashed;
+    background: #7f8fd1;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px skyblue;
+    text-align:center;
+    width: 150px;
+    height: 50px;
+    font-size: 0.9rem;
+}
+
+.page-nav{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(2px, 1.5fr));
+    gap: 5rem;
+    padding: 2rem;
 }
