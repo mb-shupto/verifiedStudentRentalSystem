@@ -11,7 +11,7 @@
         <div class="logo">
             <img src="./images/campusNest logo horizontal.png" alt="Campus Nest logo" class="center-image" height="200" width="200">
         </div>
-        <ul>
+        <ul class="nav-links">
             <li><a href="dashboard.html"> Dashboard</a></li>
             <li><a href="listing.html">Listings</a></li>
             <li><a href="profile.html">Profile</a></li>
@@ -21,20 +21,35 @@
     
     <div class="hero">
         <h2>Explore Verified Listings</h2>
-        <!-- <div class="search-filter">
-            <input type="text" name="search" id="search" placeholder="Search by blocks or location" class="form-group">
+
+        <div class="search-filter">
+            <input type="text" placeholder="Search by location..." class="search-bar">
+            <select class="price-filter" title="search-filter">
                 <option value="">All Prices</option>
-                <option value="low">3500 - 5000  ৳</option>
-                <option value="medium">5000 - 6500  ৳</option>
-                <option value="high">6500 - 8000+  ৳</option>
-            </select> -->
+                <option value="low">3500 - 5000৳</option>
+                <option value="medium">5000 - 6500৳</option>
+                <option value="medium">6500 - 9000৳</option>      
+                <option value="medium">9000+৳</option>
+          
+            </select>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="room-type" value="shared" checked> Shared</label>
+                <label><input type="checkbox" name="room-type" value="single"> Single</label>
+                <label><input type="checkbox" name="room-type" value="master"> Master</label>
+            </div>
+            <button class="button button2">Apply Filters</button>
+            </div>
         </div>
+    
+
+    
         <div class="listings-grid">
-            <a href="listings-detail.html?id=1" class="listing-card">
-                <img src="./images/room-1.jpg" alt="" class="card-image">
-                <h3>Shared Room</h3>
-                <p>4000৳/month </p>
+            <a href="listing-detail-1.html" class="listing-card" data-price="4000" data-type="shared" data-location="Bashundhara">
+            <img src="./images/room-1.jpg" alt="" class="card-image">
+            <h3>Shared Room</h3>
+            <p>4000৳/month</p>
             </a>
+<!-- Add similar data attributes to all listing cards -->
 
             <a href="listings-detail.html?id=2" class="listing-card">
                 <img src="./images/room-2.jpg" alt="" class="card-image">
@@ -104,7 +119,8 @@
         </div>
 
         <div class="page-nav">
-            <div class="next-nav"><a href="listing-2.html">Next Page >></a></div>
+            <button class="button button2"><div class="next-nav"><a href="listing-2.html">Next Page >></a></div></button>
+            
             
         </div>
     </div>
