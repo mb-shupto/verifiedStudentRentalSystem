@@ -3,43 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campus Nest</title>
-    <link rel="shortcut icon" href="./images/campusNest shortcut icon.png" type="image/x-icon">
+    <title>Home</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> -->
 </head>
 <body>
     <nav class="navbar">
-    <div class="header"><img src="./images/campusNest logo horizontal.png" alt="Campus Nest logo" height="250" width="300" style="display: block; margin-left: auto; margin-right: auto;"></div>
-
-    <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="">Listings</a></li>
-        <li><a href="">About Us</a></li>
-        <li><a href="">Contact </a></li>
-    </ul>
-
-    <div class="auth-buttons">
-        
-        <a href="login.html"><button class="button button2" >Login</button></a>
-        
-        <a href="register.html"><button class="button button2">Sign Up</button></a>
+        <div class="parent">
+            <div class="header"><img src="./images/campusNest logo horizontal.png" alt="Logo" class="logo"></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="listing.html">Listings</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="login.html" class="button button1">Login</a>
+                <a href="register.html" class="button button1">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+    <div class="hero">
+        <h2>Find Your Perfect Home. Verified, Safe & Affordable!</h2>
     </div>
-</nav>
-
-     
-<div class="hero">
-    <p>Find your perfect Home. Verified listing. Safe & affordable.</p>
-    </div>
-    
     <div class="features">
-        <h2>Why Campus Nest?</h2>
+        <h3>Why Campus Nest?</h3>
         <ul>
             <li>🎓 Educational institute mail verification (.edu)</li>
             <li>📸 Virtual tours for every listing</li>
             <li>🤝 Smart roommate matching</li>
         </ul>
     </div>
-
+    <div class="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item">
+                <h3>Featured: Cozy Apartment</h3>
+                <p>4000৳/month</p>
+                <img src="images/room-7.png" alt="Cozy Apartment" height="400px" width="400px">
+            </div>
+            <div class="carousel-item">
+                <h3>Featured: Shared House</h3>
+                <p>7000৳/month</p>
+                <img src="./images/room-10.png" alt="Shared House" height="400px" width="400px" >
+            </div>
+        </div>
+    </div>
     <div class="image-grid">
         <img src="https://media.istockphoto.com/id/1581045672/photo/education-laptop-student-computer-teenager-studying-boy-learning-homework-study-young-school.jpg?s=612x612&w=0&k=20&c=ytSpytOADNigrtZTFZkZwYmjBeEculuHc_2MLEvpKNk=" alt="Student studying">
         
@@ -47,6 +55,19 @@
         <img src="https://www.shutterstock.com/image-photo/smiling-young-african-american-woman-600nw-2456043097.jpg" alt="Student studying 2">
     </div>
 
-<footer></footer>
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-item');
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+            if (index >= totalSlides) currentSlide = 0;
+            else if (index < 0) currentSlide = totalSlides - 1;
+            else currentSlide = index;
+            document.querySelector('.carousel-inner').style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+
+        setInterval(() => showSlide(currentSlide + 1), 3500);
+    </script>
 </body>
 </html>
