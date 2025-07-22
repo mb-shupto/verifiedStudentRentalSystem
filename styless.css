@@ -1,0 +1,491 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header{
+    font-family: 'Times New Roman', Times, serif;   
+    margin-right: auto;
+}
+
+
+.parent{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+
+.navbar-2{
+    display: flex;
+    gap: 1rem;
+    }
+
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1:hover {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+  border-radius: 10px;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+/* Add this to your styles.css */
+
+/* Hero Section */
+.hero {
+    max-width: 50%;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    margin-top: 70px;
+}
+
+/* Features List */
+.features {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.features li {
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    background: #f0f8ff;
+    border-left: 3px solid #55cae5;
+    border-radius: 4px;
+}
+
+/* Images Grid */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    max-width: 900px;
+    margin: 2rem auto;
+}
+
+.image-grid img {
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Form Container */
+.registration-container {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Form Header */
+.form-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.form-header h2 {
+    color: #2c3e50;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Form Elements */
+.form-group {
+    margin-bottom: 1.5rem;
+
+    input {
+    font-size: 16px;
+    padding: 10px 10px 10px 10px;
+    display: block;
+    width: 200px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #515151;  
+    background: transparent;
+}
+}
+
+input {
+    font-size: 16px;
+    padding: 10px 10px 10px 10px;
+    display: block;
+    width: 200px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #515151;  
+    background: transparent;
+}
+
+input:focus~label {
+    top: -20px;
+    font-size: 14px;
+    color: #7700ff;
+}
+
+input:focus {
+    border-width: 2px;
+    border-bottom-color: #7700ff;
+
+
+
+
+}
+  
+
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52,152,219,0.2);
+}
+
+/* Submit Button */
+.submit-btn {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Footer Links */
+.form-footer {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #7f8c8d;
+}
+
+.form-footer a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.form-footer a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+.login-container{
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.navbar{
+    border: 1rem solid rgb(26, 128, 205);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 15px;
+    background-color: #ffffff;
+    padding: 1rem;
+}
+
+.nav-links {
+    list-style:disc;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: rgb(26, 128, 205);
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-links a:hover {
+    color: #000000; /* Lighten on hover */
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.dashboard-section{
+    margin: 2rem;
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.dashboard-section h3 {
+    margin-bottom: 0.5rem;
+    color: #007bff;
+}
+
+.profile-card {
+    max-width: 800px;
+    margin: 70px auto 2rem;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.status {
+    padding: 0.3rem 1rem;
+    border-radius: 12px;
+}
+
+.verified {
+    background-color: #28a745;
+    color: white;
+}
+
+.profile-actions {
+    display: grid;
+    grid-template-columns: repeat(auto, minmax(200px,1fr));
+    gap: 1.5rem;
+}
+
+.action-card {
+    background: #f0f8ff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.action-card:hover {
+    transform: translate(-5px);
+    background: #e6f0fa;
+}
+
+.action-card h4 {
+    color: #007bff;
+    margin-bottom: 0.5rem;
+}
+
+.edit-profile-card {
+    max-width: 600px;
+    margin: 70px auto 2rem;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+
+.button3 {
+    background-color: #dc3545; /* Red color for Cancel */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button3:hover {
+    background-color: #a31a28; /* Darker red on hover */
+}
+
+.button3:active {
+    background-color: #bd2130; /* Even darker when clicked */
+}
+
+/* Ensure form-actions layout works with new button */
+.form-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.form-actions .button {
+    padding: 0.8rem 1.5rem;
+}
+
+.logo{
+    /* border: 1rem solid red; */
+    width: 30%;
+    height: 20%;
+}
+
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+.form-group textarea {
+    resize: vertical;
+}
+
+/* Add to existing styles */
+.listing-card {
+    display: block;
+    text-decoration: none;
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+    height: 230px;
+    overflow: hidden;
+}
+
+.card-image {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+}
+
+.listing-card h3 {
+    margin: 0.25rem 0;
+    color: #007bff;
+    font-size: 1rem;
+}
+
+.listing-card p {
+    margin: 0;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.listings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.detail-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+.prev-nav {
+    display: block;
+    text-decoration:dashed;
+    background: #7f8fd1;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px skyblue;
+    text-align:center;
+    width: 150px;
+    height: 50px;
+    font-size: 0.9rem;
+}
+
+.next-nav {
+    display: block;
+    text-decoration:dashed;
+    background: #7f8fd1;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px skyblue;
+    text-align:center;
+    width: 150px;
+    height: 50px;
+    font-size: 0.9rem;
+}
+
+.page-nav{
+    display: flex;
+    justify-content: center;
+    gap: 300px;
+}
