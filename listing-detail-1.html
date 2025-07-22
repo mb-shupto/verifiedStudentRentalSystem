@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Details - Campus Nest</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><img src="./images/campusNest logo horizontal.png" alt="Campus Nest Logo" height="200" width="200" class="center-image">
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="listings">Listings</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <div class="property-container">
+            <!-- Main Content Column -->
+            <div class="property-main">
+                <!-- Image Gallery -->
+                <div class="gallery">
+                    <div class="main-image">
+                        <img src="./images/room-1.jpg" alt="Modern shared apartment">
+                    </div>
+                    <div class="thumbnails">
+                        <img src="./images/room-1.jpg" alt="Living room" class="active">
+                        <img src="./images/room-2.jpg" alt="Bedroom">
+                        <img src="./images/room-3.jpg" alt="Kitchen">
+                        <img src="./images/room-4.jpg" alt="Bathroom">
+                        <button class="virtual-tour-btn">
+                            <i class="icon-vr"></i> 360° Tour
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Property Header -->
+                <div class="property-header">
+                    <div class="title-section">
+                        <h1>Modern Shared Apartment</h1>
+                        <div class="verification-badge">
+                            <span class="verified-icon">✓</span>
+                            <span>Verified Property</span>
+                        </div>
+                    </div>
+                    <div class="price">4,500৳<span>/month</span></div>
+                </div>
+
+                <!-- Key Features -->
+                <div class="key-features">
+                    <div class="feature">
+                        <i class="icon-bed"></i>
+                        <span>2 Beds</span>
+                    </div>
+                    <div class="feature">
+                        <i class="icon-bath"></i>
+                        <span>1 Bath</span>
+                    </div>
+                    <div class="feature">
+                        <i class="icon-size"></i>
+                        <span>450 sqft</span>
+                    </div>
+                    <div class="feature">
+                        <i class="icon-walk"></i>
+                        <span>500m from IUB Campus</span>
+                    </div>
+                </div>
+
+                <!-- Description -->
+                <div class="description-section">
+                    <h2>About This Property</h2>
+                    <p>Fully furnished shared apartment with high-speed internet, 24/7 security, and regular cleaning service. Perfect for students with quiet study areas and proximity to campus.</p>
+                    
+                    <div class="divider"></div>
+                    
+                    <h2>Amenities</h2>
+                    <div class="amenities-grid">
+                        <div class="amenity">
+                            <i class="icon-wifi"></i>
+                            <span>WiFi Included</span>
+                        </div>
+
+                         <div class="amenity">
+                            <i class="icon-gas"></i>
+                            <span>Gas Included</span>
+                        </div>
+                        <!-- More amenities... -->
+                    </div>
+                </div>
+
+                <!-- Trust Indicators -->
+                <div class="trust-section">
+                    <h2>Why You Can Trust This Listing</h2>
+                    <div class="trust-items">
+                        <div class="trust-item">
+                            <i class="icon-verified-user"></i>
+                            <div>
+                                <h3>Student-Verified Landlord</h3>
+                                <p>Verified through our campus validation system</p>
+                            </div>
+                        </div>
+                        <!-- More trust items... -->
+                    </div>
+                </div>
+
+                <!-- Location Section -->
+                <div class="location-section">
+                    <h2>Location</h2>
+                    <div class="map-container" id="map">
+                        <!-- Fallback content -->
+                        <div class="map-fallback">
+                            <p>View this property on <a href="#" class="map-link">Google Maps</a></p>
+                            <p class="error-note">(Interactive map requires JavaScript)</p>
+                        </div>
+                    </div>
+                    <div class="location-details">
+                        <p><strong>Address:</strong> Bashundhara R/A, B-Block, Road-12, House-123</p>
+                        <p><strong>Landmarks:</strong> 5 min walk to IUB BC Building, 10 min to Bashundhara Gate</p>
+                    </div>
+                </div>
+
+                <!-- Roommates Section -->
+                <div class="roommates-section">
+                    <h2>Current Roommates</h2>
+                    <div class="roommate-card">
+                        <img src="./images/roommate-avatar.jpg" alt="Benedict Cumberbatch">
+                        <div class="roommate-info">
+                            <h3>Benedict Cumberbatch</h3>
+                            <p>Computer Science, Independent University Bangladesh</p>
+                            <div class="compatibility">
+                                <div class="match-percent">85% Match</div>
+                                <button class="match-details">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar Column -->
+            <div class="property-sidebar">
+                <div class="sidebar-card">
+                    <h2>Rent Breakdown</h2>
+                    <div class="price-details">
+                        <div class="price-row">
+                            <span>Monthly Rent</span>
+                            <span>4,500৳</span>
+                        </div>
+                        <div class="price-row">
+                            <span>Security Deposit</span>
+                            <span>5,000৳</span>
+                        </div>
+                        <div class="price-row total">
+                            <span>First Payment</span>
+                            <span>9,500৳</span>
+                        </div>
+                    </div>
+
+                    <div class="action-buttons">
+                        <button class="btn-primary">
+                            <i class="icon-calendar"></i> Schedule Tour
+                        </button>
+                        <button class="btn-secondary">
+                            <i class="icon-message"></i> Message Owner
+                        </button>
+                        <button class="btn-wishlist">
+                            <i class="icon-heart"></i> Save to Wishlist
+                        </button>
+                    </div>
+
+                    <div class="owner-card">
+                        <div class="owner-header">
+                            <img src="./images/landlord-1.webp" alt="Mr. Robert">
+                            <div>
+                                <h3>Mr. Robert</h3>
+                                <div class="verification">
+                                    <span class="verified-icon">✓</span>
+                                    <span>Verified Landlord</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owner-stats">
+                            <div class="stat">
+                                <div class="stat-value">4.8</div>
+                                <div class="stat-label">Rating (24 reviews)</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-value">12</div>
+                                <div class="stat-label">Listings</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-value">99%</div>
+                                <div class="stat-label">Response Rate</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="listing-detail.js"></script>
+</body>
+<!-- Compatibility Modal (hidden by default) -->
+<div class="modal-overlay" id="compatibilityModal">
+  <div class="modal-container">
+    <button class="modal-close">&times;</button>
+    
+    <div class="modal-header">
+      <img src="./images/student-1.jpg" alt="Roommate photo">
+      <h2>Compatibility Details</h2>
+      <div class="overall-score">55% Match</div>
+    </div>
+    
+    <div class="compatibility-factors">
+      <!-- Factors will be inserted by JavaScript -->
+    </div>
+    
+    <div class="modal-actions">
+      <button class="btn-secondary">View Full Profile</button>
+      <button class="btn-primary">Send Message</button>
+    </div>
+  </div>
+</div>
+</html>
